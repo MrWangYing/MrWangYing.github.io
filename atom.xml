@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>处州鹿鸣</title>
+  
+  <subtitle>望仔的个人博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-06-29T09:00:49.030Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Wang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NexT主题配置</title>
+    <link href="http://yoursite.com/2018/06/29/NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2018/06/29/NexT主题配置/</id>
+    <published>2018-06-29T03:05:39.000Z</published>
+    <updated>2018-06-29T09:00:49.030Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们利用Hexo和git成功搭建好个人博客后，如果不喜欢Hexo的默认主题，可以更换不同的主题，主题可以<a href="https://hexo.io/themes/" target="_blank" rel="noopener">点击这里</a>进行浏览下载，完成后我们可以在根目录的themes文件夹下查看自己拥有什么主题。如：</p><pre><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></pre><p>接下来我们可以通过修改博客配置文件<code>_config.yml</code>进行修改主题。</p><pre><code># Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: next</code></pre><h1 id="主题的基本配置"><a href="#主题的基本配置" class="headerlink" title="主题的基本配置"></a>主题的基本配置</h1><h2 id="添加-标签-分类-页面"><a href="#添加-标签-分类-页面" class="headerlink" title="添加[标签][分类]页面"></a>添加[标签][分类]页面</h2><p>新建[标签]页面，并在菜单中显示[标签]。<br>在终端窗口下，使用<code>hexo new page tags</code>新建一个页面，命名为<code>tags</code>；使用<code>hexo new page categories</code>新建一个页面，命名为<code>categories</code>；<br>    $ hexo new page tags<br>    $ hexo new page categories<br>编辑刚新建的页面，将页面的<code>type</code>设置为<code>tags</code>和<code>categories</code>，主题将自动为这个页面显示标签或分类。</p><h2 id="设置代码高亮主题"><a href="#设置代码高亮主题" class="headerlink" title="设置代码高亮主题"></a>设置代码高亮主题</h2><p>NexT 使用 <a href="https://github.com/chriskempson/tomorrow-theme" target="_blank" rel="noopener">Tomorrow Theme</a> 作为代码高亮，共有5款主题供你选择。 NexT 默认使用的是 白色的 <code>normal</code> 主题，可选的值有 <code>normal</code>，<code>night</code>， <code>night blue</code>， <code>night bright</code>， <code>night eighties</code><br>更改 <code>highlight_theme</code> 字段，将其值设定成你所喜爱的高亮主题，例如：</p><pre><code># Code Highlight theme# Available value: normal | night | night eighties | night blue | night bright# https://github.com/chriskempson/tomorrow-themehighlight_theme: normal</code></pre><h2 id="侧边栏社交链接"><a href="#侧边栏社交链接" class="headerlink" title="侧边栏社交链接"></a>侧边栏社交链接</h2><p>侧栏社交链接的修改包含两个部分，第一是链接，第二是链接图标。 两者配置均在 <code>主题配置文件</code> 中。<br>链接放置在 <code>social</code> 字段下，一行一个链接。其键值格式是 <code>显示文本</code>: <code>链接地址</code>。</p><pre><code># Social linkssocial:  GitHub: https://github.com/your-user-name  Twitter: https://twitter.com/your-user-name  微博: http://weibo.com/your-user-name  豆瓣: http://douban.com/people/your-user-name  知乎: http://www.zhihu.com/people/your-user-name  # 等等</code></pre><p>设定链接的图标，对应的字段是 <code>social_icons</code>。其键值格式是 匹配键: Font Awesome 图标名称， 匹配键 与上一步所配置的链接的 <code>显示文本</code> 相同（大小写严格匹配），图标名称 是 Font Awesome 图标的名字（不必带 <code>fa-</code> 前缀）。 <code>enable</code> 选项用于控制是否显示图标，你可以设置成 <code>false</code> 来去掉图标。</p><pre><code># Social Iconssocial_icons:  enable: true  # Icon Mappings  GitHub: github  Twitter: twitter  微博: weibo</code></pre><h1 id="第三方服务"><a href="#第三方服务" class="headerlink" title="第三方服务"></a>第三方服务</h1><h2 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h2><p>NexT 支持多款评论系统<br>我利用的是<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a>，具体参见其<a href="https://valine.js.org/hexo/" target="_blank" rel="noopener">文档</a>。</p><p>暂时先写这么多，更多的配置下次再更新。<br>2018/6/29 11:42:09 </p><p>添加了分享功能哦，大家可以试试<br>2018/6/29 17:00:46 </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;我们利用Hexo和git成功搭建好个人博客后，如果不喜欢Hexo的默认主题，可以更换不同的主题，主题可以&lt;a href=&quot;https://h
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo主题" scheme="http://yoursite.com/tags/Hexo%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/06/28/hello-world/"/>
+    <id>http://yoursite.com/2018/06/28/hello-world/</id>
+    <published>2018-06-28T09:33:11.339Z</published>
+    <updated>2018-06-28T09:33:11.339Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
